@@ -1,0 +1,110 @@
+// 
+// Global
+// 
+
+body {
+    padding-top: $navbar-base-height;
+    color: $gray-600;
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        padding-top: 0;
+        padding-left: $sidebar-base-width;
+    }
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    text-transform: uppercase;
+}
+
+h1 {
+    line-height: 1;
+}
+h5 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #365583;
+}
+// add dark mode based off system settings
+// @media (prefers-color-scheme: dark) {
+//     h5 {
+//         color: #fff !important;
+//     }
+// }
+
+p.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.subheading {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    // no underline
+    text-decoration: none;
+    color: #343a40;
+}
+// add dark mode based off system settings
+@media (prefers-color-scheme: dark) {
+    .subheading {
+        color: #365583 !important;
+    }
+}
+
+.mb-6{
+    margin-top: 5rem !important;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+
+
+  .col-md-4.center {
+    margin: 0 auto;
+    float: none !important;
+    // center text
+    text-align: center;
+  }
+
+//   add dark mode based off system settings
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #f0efef;
+      color: #343a40;
+    }
+  }
+
+//   add dark mode based off system settings
+
+// dark mode heading color based off system settings
+@media (prefers-color-scheme: dark) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: #343a40 !important;}
+    h6 {
+        color: #d4d4d4 !important;
+    }
+}
