@@ -11363,6 +11363,14 @@ p.lead {
   text-align: center;
 }
 
+.success {
+  color: 343a40;
+}
+
+.error {
+  color: red;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #f0efef;

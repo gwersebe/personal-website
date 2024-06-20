@@ -86,6 +86,13 @@ p.lead {
     text-align: center;
   }
 
+  .success {
+    color: 343a40;
+  }
+
+.error {
+        color: red;
+    }
 //   add dark mode based off system settings
   @media (prefers-color-scheme: dark) {
     body {
